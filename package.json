@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "./node_modules/.bin/webpack --progress --profile --colors --config  webpack/webpack.config.js",
-    "watch": "./node_modules/.bin/webpack-dev-server --devtool eval-source-map --progress --colors --hot --inline --content-base ./public"
+    "watch": "./node_modules/.bin/webpack-dev-server --devtool eval-source-map --progress --colors --hot --inline --content-base ./public",
+    "dev2": "webpack-dev-server --config webpack/webpack.config.js --progress --colors",
+    "dev3": "webpack-dev-server --config webpack.config.js --progress --colors"
   },
   "author": "henix",
   "license": "ISC",
@@ -15,9 +17,14 @@
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
     "css-loader": "^0.27.3",
+    "file-loader": "^0.10.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.2",
     "react-hot-loader": "^3.0.0-beta",
     "style-loader": "^0.16.0",
+    "url-loader": "^0.5.8",
     "webpack": "^2.3.1",
     "webpack-dev-server": "^2.4.2"
   },

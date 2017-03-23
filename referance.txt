@@ -1,0 +1,1 @@
+bare-minimum-react-hot-rr4-redux
